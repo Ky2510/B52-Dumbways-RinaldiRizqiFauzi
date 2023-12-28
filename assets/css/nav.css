@@ -1,0 +1,51 @@
+.nav {
+    padding: 10px;
+    background-color: #f4f3f3;
+}
+
+.nav-icon {
+    display: flex;
+    width: 42px;
+    margin-left: 100px;
+    align-items: center;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-weight: 100;
+}
+
+
+.nav-right {
+    display: flex;
+    margin-right: 67px;
+    align-items: center;
+}
+
+.active {
+   font-weight: 800;
+}
+
+.btn-contact {
+    color: white;
+    background-color: #111727;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 50px;
+    border-radius: 10px;
+    width: 50px;
+    font-size: 12px;
+}
