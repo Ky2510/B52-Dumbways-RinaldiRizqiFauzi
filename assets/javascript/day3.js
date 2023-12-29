@@ -1,55 +1,30 @@
 function submitData() {
-    
-}
+    const name = document.getElementById("name").value
+    const email = document.getElementById("email").value
+    const phoneNumber = document.getElementById("phoneNumber").value
+    const subject = document.getElementById("subject").value
+    const message = document.getElementById("message").value
 
-function objectData() {
-    let personOne = {
-        "firstName" : "Number",
-        "lastName" : "One",
-        "age" : 25,
+    if (name == "") {
+        return alert("Nama wajib diisi")
+    }else if (email == ""){
+        return alert("Email wajib diisi")
+    }else if (phoneNumber == ""){
+        return alert("Nomor Hp wajib diisi")
+    }else if (subject == ""){
+        return alert("Subjek wajib diisi")
+    }else if (message == ""){
+        return alert("Pesan wajib diisi")
     }
 
-    let personTwo = {
-        "firstName" : "Number",
-        "lastName" : "Two",
-        "age" : 27,
-    }
+    // mailto:rinaldirizqifauzi@gmail.com?subject=Fullstack%20Developer&body=Halo%20Bang
+    const link = `mailto:${email}?subject=${subject}&body=${'My Name: ' + name + ' %0DPhone Number: ' + phoneNumber + ' %0D' + message   }`
+    window.location.href = link;
+    // console.log(name);
+    // console.log(email);
+    // console.log(phoneNumber);
+    // console.log(subject);
+    // console.log(message);
 
-    document.getElementById('objectData').innerHTML = 
-                personOne.firstName + " " +
-                personOne.lastName + " is " +
-                personOne.age + " years old. <br>" +
-                personTwo.firstName + " " +
-                personTwo.lastName + " is "  +
-                personTwo.age + " years old. " 
+
 }
-
-function ifElse() {
-    bilangan = -3
-    console.log(bilangan)
-    if(bilangan > 0){
-        console.log("ini adalah bilangan positif")
-    } else if(bilangan < 0){
-        console.log("ini adalah bilangan negatif")
-    } else {
-        console.log("ini adalah bilangan 0")
-    }
-}
-
-// function calculator() {
-//     const bilanganSatu = 2
-//     const bilanganDua = 4
-
-//     const tambah = "+"
-
-//     if (tambah == "+") {
-//         console.log(bilanganSatu + bilanganDua)
-//     }else if
-//     // if (condition) {
-        
-//     // }
-// }
-
-objectData();
-calculator();
-ifElse();
