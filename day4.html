@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>D4 - Creating Blog</title>
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/nav.css" />
+    <link rel="stylesheet" href="assets/css/myproject.css" />
+    <style>
+        .tgl {
+            display: flex;
+            flex-direction: row;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        .label-style {
+            margin-bottom: 5px;
+        }
+
+        .input-style {
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <ul class="nav-header">
+            <div class="nav-left">
+                <li>
+                    <img src="assets/image/logo.png" class="nav-icon" />
+                </li>
+                <li>
+                    <a href="day2.html" class="nav-link active"> Home </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link"> My Project </a>
+                </li>
+            </div>
+            <div class="nav-right">
+                <li>
+                    <a href="contact.html" class="btn-contact"> Contact Me</a>
+                </li>
+            </div>
+        </ul>
+    </nav>
+    <section style="background-color: gray;">
+        <h2 class="title">Add My Project</h2>
+        <form onsubmit="postBlog(event)">
+            <div class="form-content form">
+                <div class="form-group">
+                    <label class="label-style" for="name">Project Name</label>
+                    <input class="input-style" id="name" />
+                </div>
+            </div>
+            <div class="form-date-content">
+                <div class="form-group form-date">
+                    <label class="label-style" for="star-date">Star date</label>
+                    <input type="date" class="input-style" id="star-date" />
+                </div>
+                <div class="form-group form-date">
+                    <label class="label-style" for="end-date">End date:</label>
+                    <input type="date" class="input-style" id="end-date" />
+                </div>
+            </div>
+            <div class="form-content">
+                <div class="form-group">
+                    <label class="label-style" for="description">Description</label>
+                    <textarea class="input-style" id="description" cols="30" rows="7"></textarea>
+                </div>
+            </div>
+            <div class="form-content">
+                <div class="form-group">
+                    <label class="label-style" for="name">Technology</label>
+                </div>
+            </div>
+            <div class="">
+                <input type="checkbox" style="margin-left: 325px;" class="checkbox-style" id="technology1" value="Node JS" />
+                <label for="technology1">Node JS</label>
+                <input type="checkbox"   style="margin-left: 362px; " class="checkbox-style" id="technology2" value="Next JS"  />
+                <label for="technology2">Next JS</label>
+            </div>
+            <div class="">
+                <input type="checkbox" style="margin-left: 325px;" class="checkbox-style" id="technology3" value="React JS" />
+                <label for="technology3">React JS</label>
+                <input type="checkbox" style="margin-left: 358px; " class="checkbox-style" id="technology4"  value="Typescript"  />
+                <label for="technology4">Typescript</label>
+            </div>
+            <div class="form-content">
+                <div class="form-group" style="margin-top:20px">
+                    <label class="label-style" for="name">Project Name</label>
+                    <input type="file" class="input-style" id="name" />
+                </div>
+            </div>
+            <button type="submit" class="btn-submit">Submit</button>
+        </form>
+    </section>
+    <br>
+    <br>
+    <center>My Project</center>
+    <div id="allProjects">
+        <!-- <h1>Tes</h1> -->
+    </div>
+    <script src="assets/javascript/day4blogs.js"></script>
+</body>
+</html>
