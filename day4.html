@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="assets/css/index.css" />
     <link rel="stylesheet" href="assets/css/nav.css" />
     <link rel="stylesheet" href="assets/css/myproject.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .tgl {
             display: flex;
@@ -79,22 +80,22 @@
                     <label class="label-style" for="name">Technology</label>
                 </div>
             </div>
-            <div class="">
-                <input type="checkbox" style="margin-left: 325px;" class="checkbox-style" id="technology1" value="Node JS" />
-                <label for="technology1">Node JS</label>
-                <input type="checkbox"   style="margin-left: 362px; " class="checkbox-style" id="technology2" value="Next JS"  />
-                <label for="technology2">Next JS</label>
+            <div class="form-checkbox">
+                <input type="checkbox" class="checkbox-style" id="laravel" value="Laravel"/>
+                <label for="laravel">Laravel</label>
+                <input type="checkbox"  style="margin-left: 362px;" class="checkbox-style" id="python" value="Python"  />
+                <label for="python">Python</label>
             </div>
-            <div class="">
-                <input type="checkbox" style="margin-left: 325px;" class="checkbox-style" id="technology3" value="React JS" />
-                <label for="technology3">React JS</label>
-                <input type="checkbox" style="margin-left: 358px; " class="checkbox-style" id="technology4"  value="Typescript"  />
-                <label for="technology4">Typescript</label>
+            <div class="form-checkbox">
+                <input type="checkbox"  class="checkbox-style" id="c++" value="C++" />
+                <label for="c++">C++</label>
+                <input type="checkbox" style="margin-left: 358px; " class="checkbox-style" id="django"  value="Django"  />
+                <label for="django">Django</label>
             </div>
             <div class="form-content">
-                <div class="form-group" style="margin-top:20px">
-                    <label class="label-style" for="name">Project Name</label>
-                    <input type="file" class="input-style" id="name" />
+                <div class="form-group">
+                    <label class="label-style" for="image-file">Project Name</label>
+                    <input type="file" class="input-style" id="image-file" />
                 </div>
             </div>
             <button type="submit" class="btn-submit">Submit</button>
@@ -102,9 +103,25 @@
     </section>
     <br>
     <br>
+        <!-- <div class="card" style="width: 26%; background-color: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 8px; padding: 10px;">
+            <img src="assets/image/foto.jpg" alt="Foto" style="width: 100%; border-radius: 5px; height: 200px;">
+            <div class="card-content">
+                <h4 style="margin-right: auto;">Nama Project - Tahun</h4>
+                <p style="margin-right: auto; font-size: 12px; color: gray;">Duration: 3 bulan</p>
+                <div class="description" style="margin-top: 15px;">
+                    <p style="margin-right: auto; font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo at asperiores nulla provident odit sed fugit ad unde quo similique.</p>
+                </div>
+                <div class="icon-technology" style="margin-top: 15px; font-size: 25px;">
+                    <i class="fa-brands fa-laravel fa-fw"></i>
+                </div>
+                <div class="button-action"style=" display: flex; gap: 7px; margin-top: 15px; " >
+                    <button style="width: 100%; border-radius: 7px; background-color: blue; color: white;">edit</button>
+                    <button style="width: 100%; border-radius: 7px; background-color: blue; color: white;">delete</button>
+                </div>
+            </div>
+        </div> -->
     <center>My Project</center>
     <div id="allProjects">
-        <!-- <h1>Tes</h1> -->
     </div>
     <script src="assets/javascript/day4blogs.js"></script>
 </body>

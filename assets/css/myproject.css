@@ -49,6 +49,15 @@
     align-items: center;
 }
 
+.form-checkbox {
+    width: 700px; 
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .form-group{
     width: 700px;
 }
@@ -57,9 +66,17 @@
     width: 347px;
 }
 
+.checkbox{
+    padding: 1000px;
+}
+
 .form-date-content{
     display: flex; 
     flex-direction: row; 
     gap: 7px; 
     justify-content: center; 
+}
+
+.form-content .form-group {
+    margin-top:20px
 }
