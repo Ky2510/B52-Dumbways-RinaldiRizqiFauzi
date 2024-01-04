@@ -2,6 +2,7 @@ const myProjects = []
 
 function postBlog(event) {
     event.preventDefault()
+    
     const projectName = document.getElementById('name').value
     const description = document.getElementById('description').value
     const starDateInput = document.getElementById('star-date')
@@ -17,7 +18,6 @@ function postBlog(event) {
     
     const d = new Date()
     const starDate = new Date(starDateInput.value)
-    console.log(starDate)
     const endDate = new Date(endDateInput.value)
     const year = d.getFullYear()
     const perbedaanWaktu = endDate - starDate
@@ -36,7 +36,7 @@ function postBlog(event) {
 
     let total
     let textDate
-    if (perbedaanHari > 31) { //jika jumlah pembuatan lebih dari 31 maka
+    if (perbedaanHari > 30) { //jika jumlah pembuatan lebih dari 31 maka
         total = Math.floor(perbedaanHari / 31) // jika lebih dari 31 => 1 // Math.floor mendekati angka terkecil
                                             // contoh jika hasilnya 1.7 maka masih tetap hasilnya 1 kecuali sudah
                                             // menyentuh angka 2
@@ -53,11 +53,14 @@ function postBlog(event) {
     // += berfungsi menambahkan icon dalam variable iconTechnology yg stringnya "" (kosong)
     if (laravel.checked) {
         iconTechnology += `<i class="fa-brands fa-laravel"></i>`
-    }else if(python.checked) {
+    }
+    if(python.checked) {
         iconTechnology += `<i class="fa-brands fa-python"></i>`
-    }else if(sass.checked) {
+    }
+    if(sass.checked) {
         iconTechnology += `<i class="fa-brands fa-sass"></i>`
-    }else if(php.checked) {
+    }
+    if(php.checked) {
         iconTechnology += `<i class="fa-brands fa-php"></i>`
     }
 
@@ -103,8 +106,8 @@ function showMyProject() {
                        ${myProjects[index].iconTechnology}
                     </div>
                     <div class="button-action"style=" display: flex; gap: 7px; margin-top: 15px; " >
-                        <a href="" style="width: 100%; border-radius: 7px; background-color: #111727; color: white;">edit</a>
-                        <a href="" style="width: 100%; border-radius: 7px; background-color: #111727; color: white;">delete</a>
+                        <a href="detail.html" style="width: 100%; text-align: center; text-decoration:none; font-size: 16px; border-radius: 7px; font-size:14:px; background-color: #111727; color: white;" target="_blank">edit</a>
+                        <a href="detail.html" style="width: 100%; text-align: center; text-decoration:none; font-size: 16px; border-radius: 7px; font-size:14:px; background-color: #111727; color: white;" target="_blank">delete</a>
                     </div>
                 </div>
             </div>

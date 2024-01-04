@@ -1,0 +1,84 @@
+.row {
+    display: flex;
+}
+
+.title {
+    text-align: center; 
+    font-weight: bold;
+    margin: 30px 30px;
+}
+
+.mini-title {
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.mini-subtitle {
+    font-size: 20px;
+    font-size: 20px;
+}
+
+.image {
+    width: 100%; 
+    margin-left: 40px;
+    height: 425px;
+}
+
+.card {
+    margin-top: 30px; 
+    margin-left: 70px;
+}
+
+.content {
+    display: flex;
+    gap: 20px; 
+    align-items: center;
+}
+
+.content p {
+    margin-top:10px;
+}
+
+.row-content {
+    display: flex;
+    flex-direction: column;
+}
+.row-content p {
+    margin-left: 110px;   
+    margin-right: 110px;
+}
+
+.row-content .first {
+    margin-top: 40px;
+}
+
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}

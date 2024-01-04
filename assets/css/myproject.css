@@ -60,6 +60,8 @@
     text-decoration: none;
     border-radius: 50px;
     padding: 3px;
+    margin-left: 604px; 
+    z-index: 1;
     width: 90px;
     font-size: 12px;
     text-align: center;
