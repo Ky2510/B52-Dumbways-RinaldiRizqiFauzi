@@ -16,8 +16,9 @@ function postBlog(event) {
     // querySelector mengambil element selain id="" (class, style, type dll)
     
     const d = new Date()
-    const starDate = d(starDateInput.value);
-    const endDate = d(endDateInput.value)
+    const starDate = new Date(starDateInput.value)
+    console.log(starDate)
+    const endDate = new Date(endDateInput.value)
     const year = d.getFullYear()
     const perbedaanWaktu = endDate - starDate
 
@@ -44,22 +45,19 @@ function postBlog(event) {
     }else{
         total = perbedaanHari
         textDate = "hari"
-        console.log(`${perbedaanHari} ${textDate}`)
     }
+
 
     
     let iconTechnology = "";
     // += berfungsi menambahkan icon dalam variable iconTechnology yg stringnya "" (kosong)
     if (laravel.checked) {
         iconTechnology += `<i class="fa-brands fa-laravel"></i>`
-    }
-    if(python.checked) {
+    }else if(python.checked) {
         iconTechnology += `<i class="fa-brands fa-python"></i>`
-    }
-    if(sass.checked) {
+    }else if(sass.checked) {
         iconTechnology += `<i class="fa-brands fa-sass"></i>`
-    }
-    if(php.checked) {
+    }else if(php.checked) {
         iconTechnology += `<i class="fa-brands fa-php"></i>`
     }
 
@@ -68,7 +66,6 @@ function postBlog(event) {
     const myProject = {
         projectName : projectName,
         description : description,
-        rangeDay : perbedaanHari,
         image : linkImage,
         year : year,
         perbedaanHari: perbedaanHari,
@@ -106,8 +103,8 @@ function showMyProject() {
                        ${myProjects[index].iconTechnology}
                     </div>
                     <div class="button-action"style=" display: flex; gap: 7px; margin-top: 15px; " >
-                        <button style="width: 100%; border-radius: 7px; background-color: #111727; color: white;">edit</button>
-                        <button style="width: 100%; border-radius: 7px; background-color: #111727; color: white;">delete</button>
+                        <a href="" style="width: 100%; border-radius: 7px; background-color: #111727; color: white;">edit</a>
+                        <a href="" style="width: 100%; border-radius: 7px; background-color: #111727; color: white;">delete</a>
                     </div>
                 </div>
             </div>

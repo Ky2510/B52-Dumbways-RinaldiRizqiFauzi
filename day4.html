@@ -52,7 +52,73 @@
     </nav>
     <section style="background-color: #e3e7eb;">
         <h2 class="title">Add My Project</h2>
-        <form onsubmit="postBlog(event)">
+        <div class="row">
+            <div class="col-3">
+            </div>
+            <div class="col-6">
+                <form onsubmit="postBlog(event)">
+                    <div class="form-content form">
+                        <div class="form-group">
+                            <label class="label-style" for="name">Project Name</label>
+                            <input class="input-style" id="name" />
+                        </div>
+                    </div>
+                    <div class="form-date-content">
+                        <div class="form-group form-date">
+                            <label class="label-style" for="star-date">Star date</label>
+                            <input type="date" class="input-style" id="star-date" />
+                        </div>
+                        <div class="form-group form-date">
+                            <label class="label-style" for="end-date">End date:</label>
+                            <input type="date" class="input-style" id="end-date" />
+                        </div>
+                    </div>
+                    <div class="form-content">
+                        <div class="form-group">
+                            <label class="label-style" for="description">Description</label>
+                            <textarea class="input-style" id="description" cols="30" rows="7"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-content">
+                        <div class="form-group">
+                            <label class="label-style" for="name">Technology</label>
+                        </div>
+                    </div>
+                    <div class="form-checkbox">
+                        <input type="checkbox" class="checkbox-style" id="laravel" value="Laravel"/>
+                        <label for="laravel" style="margin-left: 10px;">Laravel</label>
+                        <input type="checkbox"  class="checkbox-style" style="margin-left: 270px;" id="python" value="Python"  />
+                        <label for="python">Python</label>
+                    </div>
+                    <div class="form-checkbox">
+                        <input type="checkbox"  class="checkbox-style" id="php" value="PHP" />
+                        <label for="php" style="margin-left: 10px;">PHP</label>
+                        <input type="checkbox"  class="checkbox-style" style="margin-left: 293px;" id="sass"  value="Sass"  />
+                        <label for="sass">Sass</label>
+                    </div>
+                    <div class="form-content">
+                        <div class="form-group">
+                            <label class="label-style" for="image-file">Upload Image</label>
+                        </div>
+                    </div>
+                    <div class="form-content">
+                        <div class="input-project-image-group">
+                            <label for="image-file">
+                                <p>Choose</p>
+                                <i class="fa-solid fa-upload"></i>
+                            </label>
+                            <input type="file" class="input-style" id="image-file"  hidden/>
+                        </div>
+                    </div>
+                    <div class="">
+                        <button type="submit" class="btn-submit" style="margin-left: 608px;">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-3">
+            </div>
+        </div>
+        <!-- <form onsubmit="postBlog(event)">
             <div class="form-content form">
                 <div class="form-group">
                     <label class="label-style" for="name">Project Name</label>
@@ -107,7 +173,7 @@
                 </div>
             </div>
             <button type="submit" class="btn-submit">Submit</button>
-        </form>
+        </form> -->
     </section>
     <br>
     <br>
