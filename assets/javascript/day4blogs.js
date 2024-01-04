@@ -16,9 +16,9 @@ function postBlog(event) {
     // querySelector mengambil element selain id="" (class, style, type dll)
     
     const d = new Date()
+    const starDate = d(starDateInput.value);
+    const endDate = d(endDateInput.value)
     const year = d.getFullYear()
-    const starDate = new Date(starDateInput.value);
-    const endDate = new Date(endDateInput.value)
     const perbedaanWaktu = endDate - starDate
 
     // hasil 1 hari / 24 jam jika dihitung milidetik = 86400000
@@ -35,8 +35,8 @@ function postBlog(event) {
 
     let total
     let textDate
-    if (perbedaanHari > 30) { //jika jumlah pembuatan lebih dari 30 maka
-        total = Math.floor(perbedaanHari / 30) // jika lebih dari 30 => 1 // Math.floor mendekati angka terkecil
+    if (perbedaanHari > 31) { //jika jumlah pembuatan lebih dari 31 maka
+        total = Math.floor(perbedaanHari / 31) // jika lebih dari 31 => 1 // Math.floor mendekati angka terkecil
                                             // contoh jika hasilnya 1.7 maka masih tetap hasilnya 1 kecuali sudah
                                             // menyentuh angka 2
         textDate = "bulan" // text nya bulan
@@ -49,7 +49,7 @@ function postBlog(event) {
 
     
     let iconTechnology = "";
-    // += berfungsi menambahkan icon dalam variable iconTechnology yg stringnya ""
+    // += berfungsi menambahkan icon dalam variable iconTechnology yg stringnya "" (kosong)
     if (laravel.checked) {
         iconTechnology += `<i class="fa-brands fa-laravel"></i>`
     }
@@ -90,7 +90,7 @@ function postBlog(event) {
 }
 
 function showMyProject() {
-    let show = "<div style='display: flex; flex-wrap: wrap; gap:40px; flex-direction: row; justify-content: center'>" // kode html dalam "" artinya tidak di looping
+    let show = "<div style='margin-top:20px; display: flex; flex-wrap: wrap; gap:40px; flex-direction: row; justify-content: center;' >" // kode html dalam "" artinya tidak di looping
     for (let index = 0; index < myProjects.length; index++) {
         show += 
         `
@@ -106,8 +106,8 @@ function showMyProject() {
                        ${myProjects[index].iconTechnology}
                     </div>
                     <div class="button-action"style=" display: flex; gap: 7px; margin-top: 15px; " >
-                        <button style="width: 100%; border-radius: 7px; background-color: blue; color: white;">edit</button>
-                        <button style="width: 100%; border-radius: 7px; background-color: blue; color: white;">delete</button>
+                        <button style="width: 100%; border-radius: 7px; background-color: #111727; color: white;">edit</button>
+                        <button style="width: 100%; border-radius: 7px; background-color: #111727; color: white;">delete</button>
                     </div>
                 </div>
             </div>

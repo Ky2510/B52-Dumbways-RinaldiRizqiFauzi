@@ -14,6 +14,7 @@ if (namaBulanString == "Januari") {
         console.log(dateMonthIndex.push(index))
     }
 }
+
 if (namaBulanString == "Februari") {
     for (let index = 0; index < 29; index++) {
         console.log(dateMonthIndex.push(index))

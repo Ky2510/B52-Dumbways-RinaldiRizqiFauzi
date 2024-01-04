@@ -50,7 +50,7 @@
             </div>
         </ul>
     </nav>
-    <section style="background-color: gray;">
+    <section style="background-color: #e3e7eb;">
         <h2 class="title">Add My Project</h2>
         <form onsubmit="postBlog(event)">
             <div class="form-content form">
@@ -94,8 +94,16 @@
             </div>
             <div class="form-content">
                 <div class="form-group">
-                    <label class="label-style" for="image-file">Project Name</label>
-                    <input type="file" class="input-style" id="image-file" />
+                    <label class="label-style" for="image-file">Upload Image</label>
+                </div>
+            </div>
+            <div class="form-content">
+                <div class="input-project-image-group">
+                    <label for="image-file">
+                        <p>Choose</p>
+                        <i class="fa-solid fa-upload"></i>
+                    </label>
+                    <input type="file" class="input-style" id="image-file"  hidden/>
                 </div>
             </div>
             <button type="submit" class="btn-submit">Submit</button>
@@ -103,27 +111,10 @@
     </section>
     <br>
     <br>
-        <!-- <div class="card" style="width: 26%; background-color: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 8px; padding: 10px;">
-            <img src="assets/image/foto.jpg" alt="Foto" style="width: 100%; border-radius: 5px; height: 200px;">
-            <div class="card-content">
-                <h4 style="margin-right: auto;">Nama Project - Tahun</h4>
-                <p style="margin-right: auto; font-size: 12px; color: gray;">Duration: 3 bulan</p>
-                <div class="description" style="margin-top: 15px;">
-                    <p style="margin-right: auto; font-size: 14px;">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo at asperiores nulla provident odit sed fugit ad unde quo similique.
-                    </p>
-                </div>
-                <div class="icon-technology" style="margin-top: 15px; font-size: 25px;">
-                    <i class="fa-brands fa-laravel fa-fw"></i>
-                </div>
-                <div class="button-action"style=" display: flex; gap: 7px; margin-top: 15px; " >
-                    <button style="width: 100%; border-radius: 7px; background-color: blue; color: white;">edit</button>
-                    <button style="width: 100%; border-radius: 7px; background-color: blue; color: white;">delete</button>
-                </div>
-            </div>
-        </div> -->
-    <center>My Project</center>
-    <div id="allProjects">
+    <div style="background-color: #f8f8f8;">
+        <h2 style="font-weight: 900px; text-align: center; margin-top: -20px;">My Projects</h2>
+        <div id="allProjects">
+        </div>
     </div>
     <script src="assets/javascript/day4blogs.js"></script>
 </body>
