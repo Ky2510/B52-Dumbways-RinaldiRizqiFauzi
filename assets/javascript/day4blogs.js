@@ -90,7 +90,7 @@ function postBlog(event) {
 }
 
 function showMyProject() {
-    let show = "<div style='margin-top:20px; display: flex; flex-wrap: wrap; gap:40px; flex-direction: row; justify-content: center;' >" // kode html dalam "" artinya tidak di looping
+    let show = "<div style='margin-top:70px; display: flex; flex-wrap: wrap; gap:40px; flex-direction: row; justify-content: center;' >" // kode html dalam "" artinya tidak di looping
     for (let index = 0; index < myProjects.length; index++) {
         show += 
         `
