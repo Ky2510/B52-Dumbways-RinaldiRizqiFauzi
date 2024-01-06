@@ -6,7 +6,7 @@
 .nav-icon {
     display: flex;
     width: 42px;
-    margin-left: 100px;
+    margin-left: auto;
     align-items: center;
 }
 
@@ -17,6 +17,7 @@
 }
 
 .nav-link {
+    display: none;
     text-decoration: none;
     color: black;
 }
@@ -28,15 +29,16 @@
     font-weight: 100;
 }
 
-
 .nav-right {
     display: flex;
     margin-right: 67px;
     align-items: center;
+    gap: 8px;
 }
 
-.active {
-   font-weight: 800;
+.nav-right .hamburger {
+    display: flex;
+    cursor: pointer;
 }
 
 .btn-contact {
@@ -44,8 +46,115 @@
     background-color: #111727;
     padding: 10px;
     text-decoration: none;
-    margin-top: 50px;
     border-radius: 10px;
     width: 50px;
     font-size: 12px;
+}
+
+.nav-right .btn-contact {
+    display: none;
+    width: 80px;
+}
+
+.myLink {
+    display: none;
+    gap: 2px;
+}
+
+.nav-link-menu{
+    display: flex;
+    flex-direction: row; 
+    background-color: #b2abab; 
+    color: #f4f3f3;
+    justify-content: center;
+    margin-bottom: 2px;
+    text-decoration: none;
+    padding: 7px;
+}
+
+.nav-link-menu-active{
+    display: flex;
+    flex-direction: row; 
+    background-color: #111727; 
+    color: #f4f3f3;
+    font-weight: 800;
+    justify-content: center;
+    margin-bottom: 2px;
+    text-decoration: none;
+    padding: 7px;
+}
+
+@media only screen and (min-width: 768px) {
+    .nav {
+        padding: 10px;
+        background-color: #f4f3f3;
+    }
+    
+    .nav-icon {
+        display: flex;
+        width: 42px;
+        margin-left: 100px;
+        align-items: center;
+    }
+    
+    .nav-header {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+    
+    .nav-link {
+        display: flex;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .nav-left {
+        display: flex;
+        align-items: center;
+        background-color: #f4f3f3;
+        gap: 40px;
+        font-weight: 100;
+    }
+    
+    .nav-right {
+        display: flex;
+        margin-right: 67px;
+        align-items: center;
+    }
+
+    .nav-right .hamburger {
+        display: none;
+    }
+    
+    .active {
+       font-weight: 800;
+    }
+    
+    .btn-contact {
+        color: white;
+        background-color: #111727;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        width: 50px;
+        font-size: 12px;
+    }
+
+    .nav-right .btn-contact {
+        display: flex;
+        width: 80px;
+    }
+
+    .myLink {
+        display: none; 
+    }
+    
+    .nav-link-menu{
+        display: none;
+    }
+
+    .nav-link-menu-active{
+        display: none;
+    }
 }

@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="assets/css/index.css" />
     <link rel="stylesheet" href="assets/css/nav.css" />
     <link rel="stylesheet" href="assets/css/contact.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -16,19 +18,27 @@
                     <img src="assets/image/logo.png" class="nav-icon" />
                 </li>
                 <li>
-                    <a href="day2.html" class="nav-link active"> Home </a>
+                    <a href="day2.html" class="nav-link"> Profile </a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link"> My Project </a>
+                    <a href="day4.html" class="nav-link"> My Project </a>
                 </li>
             </div>
             <div class="nav-right">
                 <li>
-                    <a href="contact.html" class="btn-contact"> Contact Me</a>
+                    <a href="contact.html" class="btn-contact active"> Contact Me</a>
+                </li>
+                <li>
+                    <i class="hamburger fa-solid fa-bars fa-2x" onclick="burgerResponsive()"></i>
                 </li>
             </div>
         </ul>
     </nav>
+    <div class="myLink" id="myLinks">
+        <a class="nav-link-menu" href="day2.html">Profile</a>
+        <a class="nav-link-menu" href="day4.html">My Project</a>
+        <a class="nav-link-menu-active" href="contact.html">Contact</a>
+    </div>
     <h2 class="title"> GET IN TOUCH</h2>
     <div class="card-main-contact">
         <div class="card-content">
@@ -49,6 +59,7 @@
             <button class="btn-submit">Submit</button>
         </div>
     </div>
+    <script src="assets/javascript/navbar.js"></script>
 </body>
 
 </html>
