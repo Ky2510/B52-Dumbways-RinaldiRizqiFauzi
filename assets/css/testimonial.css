@@ -1,0 +1,56 @@
+.title {
+    text-align: center; 
+    font-weight: bold; 
+    position: relative; 
+    top: 30px;
+}
+
+.card-main {
+    display: flex;
+    flex-direction: column;
+    margin: 80px;
+}
+
+.image {
+    width: 100%;
+    border-radius: 5px; 
+    height: 200px;
+}
+
+.card-content {
+    display: flex; 
+    margin: 20px ;
+    flex-direction: column; 
+    flex-wrap: wrap; 
+    gap: 40px; 
+    justify-content: center;
+}
+
+.author {
+    margin-left: auto;
+    font-size: 17px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .card-content {
+        flex-direction: row;
+    }
+
+    .card {
+        width: 26%; 
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        border-radius: 8px; 
+        padding: 10px;
+    }
+}
+
+
+
+
