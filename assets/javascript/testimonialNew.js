@@ -1,26 +1,38 @@
-const datas = [
-    {
-        author: "Rinaldi Rizqi Fauzi",
-        image: "https://e1.pxfuel.com/desktop-wallpaper/763/43/desktop-wallpaper-javascript-nodejs-thumbnail.jpg",
-        title: "JavaScript",
-        content: "Lorem Ipsum Dolor",
-        rating: 1,
-    },
-    {
-        author: "Rinaldi Rizqi Fauzi",
-        image: "https://e0.pxfuel.com/wallpapers/280/885/desktop-wallpaper-typescript-thumbnail.jpg",
-        title: "TypeScript",
-        content: "Lorem Ipsum Dolor",
-        rating: 2,
-    },
-    {
-        author: "Rinaldi Rizqi Fauzi",
-        image: "https://blog.appsignal.com/_next/image?url=%2Fimages%2Fblog%2F2023-02%2Fnode-tools.png&w=3840&q=50",
-        title: "Node JS",
-        content: "Lorem Ipsum Dolor",
-        rating: 3,
-    },
-];
+// const datas = [
+//     {
+//         author: "Rinaldi Rizqi Fauzi",
+//         title: "JavaScript",
+//         content: "Lorem Ipsum Dolor",
+//         rating: 1,
+//     },
+//     {
+//         author: "Rinaldi Rizqi Fauzi",
+//         image: "https://e0.pxfuel.com/wallpapers/280/885/desktop-wallpaper-typescript-thumbnail.jpg",
+//         title: "TypeScript",
+//         content: "Lorem Ipsum Dolor",
+//         rating: 2,
+//     },
+//     {
+//         author: "Rinaldi Rizqi Fauzi",
+//         image: "https://blog.appsignal.com/_next/image?url=%2Fimages%2Fblog%2F2023-02%2Fnode-tools.png&w=3840&q=50",
+//         title: "Node JS",
+//         content: "Lorem Ipsum Dolor",
+//         rating: 3,
+//     },
+// ];
+
+const datas = "https://mocki.io/v1/35ebc135-93ef-4d79-9f8a-c687128129f1"
+
+fetch(datas)
+  .then(response => response.json())
+  .then(datas => {
+    // Lakukan sesuatu dengan datas yang diperoleh
+    console.log(datas);
+  })
+  .catch(error => {
+    console.error("Error fetching data:", error)
+  })
+
 
 function DataMain() {
     let dataHTML = ""

@@ -37,6 +37,22 @@
     gap: 10px;
 }
 
+.rating-button {
+    margin: 10px 10px;
+    padding: 7px; 
+    border-radius: 10px; 
+    background-color: #d6ddf1; 
+    color:#111727
+}
+
+    .active-rating {
+    margin: 10px 10px;
+    padding: 7px; 
+    border-radius: 10px; 
+    background-color: #111727; 
+    color:#d6ddf1
+}
+
 @media only screen and (min-width: 768px) {
     .card-content {
         flex-direction: row;
