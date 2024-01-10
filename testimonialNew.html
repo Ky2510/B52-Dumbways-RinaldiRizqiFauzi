@@ -44,16 +44,20 @@
         <a class="nav-link-menu-active" href="day4.html">Testimonial</a>
     </div>
     <h1 class="title">Testimonials</h1>
+    <h3 class="title">By Rating</h3>
     <section class="card-main">
         <div class="rating" style="text-align: center;">
-            <button id="rating-button"   class="rating-button" onclick="DataMain()"> All</button>
+            <button id="rating-button"   class="rating-button active-rating" onclick="DataMain()"> All</button>
             <button id="rating-button-1" class="rating-button" onclick="FilterRating(1)"> Rating 1</button>
             <button id="rating-button-2" class="rating-button" onclick="FilterRating(2)"> Rating 2</button>
             <button id="rating-button-3" class="rating-button" onclick="FilterRating(3)"> Rating 3</button>
             <button id="rating-button-4" class="rating-button" onclick="FilterRating(4)"> Rating 4</button>
         </div>
         <div class="row">
-            <div id="card-content" class ="card-content" ></div>
+            <div id="card-content" class ="card-content" >
+                <div id="star" style="display: flex;">
+                </div>
+            </div>
         </div>
     </section>
     <br>

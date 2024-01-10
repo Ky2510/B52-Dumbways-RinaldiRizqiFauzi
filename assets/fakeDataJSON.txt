@@ -1,0 +1,21 @@
+[
+    {
+        "image":"https://c4.wallpaperflare.com/wallpaper/121/463/669/naruto-shippuden-akatsuki-deidara-1024x768-anime-naruto-hd-art-wallpaper-preview.jpg",
+        "title":"Ninja Pelarian",
+        "author":"Deidara",
+        "rating":1,
+        "content":"Aku menciptakan karya seni yang bisa mengguncang dunia. Ketika mereka melihat karya seniku, itu seperti karya seni terakhir mereka."
+    },{
+        "image":"https://wallpapers.com/images/hd/dark-itachi-uchiha-fohqpsc35rasahas.jpg",
+        "title":"Pengabdian Desa",
+        "author":"Itachi Uchiha",
+        "rating":2,
+        "content":"Aku tidak peduli tentang apa yang terjadi dengan desa ini. Tapi jika mereka membuatmu menangis, aku akan membunuh mereka."
+    },{
+        "image":"https://www.enwallpaper.com/wp-content/uploads/2021/08/Wallpaper-Naruto-Shippuden-Pain-Wallpaper-Naruto-Shippuud331920x1200.jpg",
+        "title":"Pembentukan Akatsuki",
+        "author":"Pain",
+        "rating":3,
+        "content":"Ketidakadilan akan selalu ada, tetapi ketidakadilan itu harus ditanggung oleh seseorang. Hanya kita yang memiliki kekuatan yang bisa melakukannya."
+    }
+]
